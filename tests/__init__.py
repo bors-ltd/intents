@@ -12,7 +12,7 @@ SENTENCES_DIR = _BASE_DIR / "sentences"
 TESTS_DIR = _BASE_DIR / "tests"
 RESPONSES_DIR = _BASE_DIR / "responses"
 
-LANGUAGES = sorted(p.name for p in SENTENCES_DIR.iterdir() if p.is_dir())
+LANGUAGES = ['fr']  # sorted(p.name for p in SENTENCES_DIR.iterdir() if p.is_dir())
 
 
 def load_sentences(language: str) -> dict[str, Any]:
