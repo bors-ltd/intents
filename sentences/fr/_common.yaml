@@ -668,6 +668,7 @@ expansion_rules:
   reprends: "(remets|remettre|reprends|reprend|reprendre|reprise|relance|relancer)"
   cree: "(créer|crée)"
   supprime: "(supprime|supprimer)"
+  annule: "(annule|annuler)"
   enleve: "(enlève|enlever|soustrais|soustrait|soustraire|retranche|retrancher)"
   ajoute: "(ajoute|ajouter|rajoute|rajouter)"
   verrouille: "(verrouiller|verrouille|barre|barrer)"

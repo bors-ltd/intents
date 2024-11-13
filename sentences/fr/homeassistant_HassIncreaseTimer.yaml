@@ -33,10 +33,10 @@ intents:
       # name
       - sentences:
           # Ajoute 2 minute du minuteur Pizza
-          - "<ajoute> <timer_duration> du <minuteur> [<appele>] {timer_name:name}"
+          - "<ajoute> <timer_duration> du <minuteur> [<appele>] [<le>] {timer_name:name}"
           # Ajoute 2 minute au minuteur Pizza
-          - "<ajoute> <timer_duration> au <minuteur> [<appele>] {timer_name:name}"
+          - "<ajoute> <timer_duration> au <minuteur> [<appele>] [<le>] {timer_name:name}"
           # Ajoute 2 minute sur le minuteur Pizza
-          - "<ajoute> <timer_duration> (sur|dans) [(le|mon)] <minuteur> [<appele>] {timer_name:name}"
+          - "<ajoute> <timer_duration> (sur|dans) [(le|mon)] <minuteur> [<appele>] [<le>] {timer_name:name}"
         expansion_rules:
-          appele: "(appelé|nommé|surnomé)"
+          appele: "(appelé|nommé|surnommé|pour)"

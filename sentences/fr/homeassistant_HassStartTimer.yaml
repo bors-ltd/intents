@@ -46,15 +46,15 @@ intents:
           # Minuteur Pizza d'une heure
           - "<minuteur> {timer_name:name} d'<timer_duration>"
           # Minuteur 5 minutes appelé Pizza
-          - "<minuteur> <timer_duration> <appele> {timer_name:name}"
+          - "<minuteur> <timer_duration> <appele> [<le>] {timer_name:name}"
           # Minuteur pour 5 minutes appelé Pizza
-          - "<minuteur> pour <timer_duration> <appele> {timer_name:name}"
+          - "<minuteur> pour <timer_duration> <appele> [<le>] {timer_name:name}"
           # Minuteur de 5 minutes appelé Pizza
-          - "<minuteur> de <timer_duration> <appele> {timer_name:name}"
+          - "<minuteur> de <timer_duration> <appele> [<le>] {timer_name:name}"
           # Minuteur d'une heure appelé Pizza
-          - "<minuteur> d'<timer_duration> <appele> {timer_name:name}"
+          - "<minuteur> d'<timer_duration> <appele> [<le>] {timer_name:name}"
         expansion_rules:
-          appele: "(appelé|nommé|surnomé)"
+          appele: "(appelé|nommé|surnommé|pour)"
 
       # Name / Verb
       - sentences:
@@ -77,25 +77,25 @@ intents:
           # Mets un minuteur Pizza pour 5 minute
           - "<mets> un <minuteur> {timer_name:name} pour <timer_duration>"
           # Crée un minuteur de 5 minute appelé Pizza
-          - "<cree> un <minuteur> de <timer_duration> <appele> {timer_name:name}"
+          - "<cree> un <minuteur> de <timer_duration> <appele> [<le>] {timer_name:name}"
           # Crée un minuteur d'une heure appelé Pizza
-          - "<cree> un <minuteur> d'<timer_duration> <appele> {timer_name:name}"
+          - "<cree> un <minuteur> d'<timer_duration> <appele> [<le>] {timer_name:name}"
           # Crée un minuteur pour 5 minute appelé Pizza
-          - "<cree> un <minuteur> pour <timer_duration> <appele> {timer_name:name}"
+          - "<cree> un <minuteur> pour <timer_duration> <appele> [<le>] {timer_name:name}"
           # Démarre un minuteur de 5 minute appelé Pizza
-          - "<active> un <minuteur> de <timer_duration> <appele> {timer_name:name}"
+          - "<active> un <minuteur> de <timer_duration> <appele> [<le>] {timer_name:name}"
           # Démarre un minuteur d'une heure appelé Pizza
-          - "<active> un <minuteur> d'<timer_duration> <appele> {timer_name:name}"
+          - "<active> un <minuteur> d'<timer_duration> <appele> [<le>] {timer_name:name}"
           # Démarre un minuteur pour 5 minute appelé Pizza
-          - "<active> un <minuteur> pour <timer_duration> <appele> {timer_name:name}"
+          - "<active> un <minuteur> pour <timer_duration> <appele> [<le>] {timer_name:name}"
           # Mets un minuteur de 5 minute appelé Pizza
-          - "<mets> un <minuteur> de <timer_duration> <appele> {timer_name:name}"
+          - "<mets> un <minuteur> de <timer_duration> <appele> [<le>] {timer_name:name}"
           # Mets un minuteur d'une heure appelé Pizza
-          - "<mets> un <minuteur> d'<timer_duration> <appele> {timer_name:name}"
+          - "<mets> un <minuteur> d'<timer_duration> <appele> [<le>] {timer_name:name}"
           # Mets un minuteur pour 5 minute appelé Pizza
-          - "<mets> un <minuteur> pour <timer_duration> <appele> {timer_name:name}"
+          - "<mets> un <minuteur> pour <timer_duration> <appele> [<le>] {timer_name:name}"
         expansion_rules:
-          appele: "(appelé|nommé|surnomé)"
+          appele: "(appelé|nommé|surnommé|pour)"
 
       - sentences:
           # "Ouvre les volets du salon dans 5 minutes"

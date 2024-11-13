@@ -9,6 +9,8 @@ intents:
           - "<supprime> [(le|mon)] <minuteur>"
           # Arrête le minuteur
           - "<eteins> [(le|mon)] <minuteur>"
+          # Annule le minuteur
+          - "<annule> [(le|mon)] <minuteur>"
 
       # area
       - sentences:
@@ -16,6 +18,8 @@ intents:
           - "<supprime> [(le|mon)] <minuteur> [<de>] [<le>]{area}"
           # Arrête le minuteur de la cuisine
           - "<eteins> [(le|mon)] <minuteur> [<de>] [<le>]{area}"
+          # Annule le minuteur de la cuisine
+          - "<annule> [(le|mon)] <minuteur> [<de>] [<le>]{area}"
 
       # duration
       - sentences:
@@ -23,12 +27,16 @@ intents:
           - "<supprime> [(le|mon)] <minuteur> [de] <timer_start>"
           # Arrête le minuteur de 2 minutes
           - "<eteins> [(le|mon)] <minuteur> [de] <timer_start>"
+          # Annule le minuteur de 2 minutes
+          - "<annule> [(le|mon)] <minuteur> [de] <timer_start>"
 
       # name
       - sentences:
           # Supprime le minuteur appelé Pizza
-          - "<supprime> [(le|mon)] <minuteur> [<appele>] {timer_name:name}"
-          # Arrête le minuteur appelé Pizza
-          - "<eteins> [(le|mon)] <minuteur> [<appele>] {timer_name:name}"
+          - "<supprime> [(le|mon)] <minuteur> [<appele>] [<le>] {timer_name:name}"
+          # Arrête le minuteur appelé pizza
+          - "<eteins> [(le|mon)] <minuteur> [<appele>] [<le>] {timer_name:name}"
+          # Annule le minuteur appelé pizza
+          - "<annule> [(le|mon)] <minuteur> [<appele>] [<le>] {timer_name:name}"
         expansion_rules:
-          appele: "(appelé|nommé|surnomé)"
+          appele: "(appelé|nommé|surnommé|pour)"

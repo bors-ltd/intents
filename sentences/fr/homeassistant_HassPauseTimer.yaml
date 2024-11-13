@@ -39,12 +39,12 @@ intents:
       # name
       - sentences:
           # Mets le minuteur appelé Pizza en pause
-          - "<mets> [(le|mon)] <minuteur> [<appele>] {timer_name:name} en pause"
+          - "<mets> [(le|mon)] <minuteur> [<appele>] [<le>] {timer_name:name} en pause"
           # Mets le minuteur appelé Pizza sur pause
-          - "<mets> [(le|mon)] <minuteur> [<appele>] {timer_name:name} sur pause"
+          - "<mets> [(le|mon)] <minuteur> [<appele>] [<le>] {timer_name:name} sur pause"
           # Mets en pause le minuteur appelé Pizza
-          - "<mets> en pause [(le|mon)] <minuteur> [<appele>] {timer_name:name}"
+          - "<mets> en pause [(le|mon)] <minuteur> [<appele>] [<le>] {timer_name:name}"
           # Mets sur pause le minuteur appelé Pizza
-          - "<mets> sur pause [(le|mon)] <minuteur> [<appele>] {timer_name:name}"
+          - "<mets> sur pause [(le|mon)] <minuteur> [<appele>] [<le>] {timer_name:name}"
         expansion_rules:
-          appele: "(appelé|nommé|surnomé)"
+          appele: "(appelé|nommé|surnommé|pour)"
